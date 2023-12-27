@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self';">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+
+  <title>Descargar video de YouTube</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Descargar video de YouTube</h1>
+    <div class="form-wrapper">
+      <form action="/download" method="post">
+        <label for="videoUrl">URL del video de YouTube:</label>
+        <input type="text" name="videoUrl" required><br>
+
+        <label for="format">Formato de descarga:</label>
+        <select name="format" id="format">
+          <option value="mp4">MP4</option>
+          <option value="mp3">MP3</option>
+        </select><br>
+
+        <button type="submit" id="downloadButton">Descargar</button>
+      </form>
+      <div class="loading-arrow"></div>
+    </div>
+  </div>
+  <!-- Incluye el archivo JavaScript externo -->
+  <script src="script.js"></script>
+</body>
+</html>
