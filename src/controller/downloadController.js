@@ -13,7 +13,7 @@ return path.join(__dirname, '../downloads');
 
 // Función para obtener el título limpiado
 async function obtenerTituloLimpiado(videoUrl) {
-  console.log(videoUrl)
+  console.log()
   try {
     const response = await axios.get(videoUrl);
     const titleMatch = response.data.match(/<title>([^<]*)<\/title>/);

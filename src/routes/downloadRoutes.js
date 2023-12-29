@@ -7,8 +7,8 @@ const downloadController = require('../controller/downloadController');
 
 // Ruta para la descarga real
 router.post('/download', async (req, res) => {
-  console.log(req.body)
-  const videoUrl = "https://www.youtube.com/watch?v=8SbUC-UaAxE" //
+  console.log(req.body.url)
+  const videoUrl = req.body.url
 
   const outputDir = downloadController.getDefaultDownloadDir();
   const selectedFormat = req.body.format || 'mp4'; // Si no se selecciona un formato, usa mp4 por defecto
@@ -20,7 +20,6 @@ router.post('/download', async (req, res) => {
     const filePath = path.join(outputDir, fileName);
     res.download(filePath, fileName, (err) => {
       const responseData = { message: 'Descarga exitosa' };
-      res.json(responseData);
       if (err) {
         console.error('Error al enviar el archivo:', err);
         res.status(500).send('Error al enviar el archivo.');
