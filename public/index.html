@@ -12,7 +12,8 @@
   <div class="container">
     <h1>Descargar video de YouTube</h1>
     <div class="form-wrapper">
-      <form action="/download" method="post">
+      <form action="/download" method="post" enctype="multipart/form-data">
+     
         <label for="videoUrl">URL del video de YouTube:</label>
         <input type="text" name="videoUrl" required><br>
 
