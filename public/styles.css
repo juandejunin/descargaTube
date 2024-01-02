@@ -1,7 +1,11 @@
-   body {
-    background-color: #5a5a5a;
-    color: #fff;
-    font-family: Arial, sans-serif;
+html {
+  font-family: Söhne,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,Helvetica Neue,Arial,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+ 
+}
+  
+  body {
+    background-color: #050509;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,7 +25,7 @@
   .form-wrapper {
     max-width: 700px;
     padding: 20px;
-    background-color: #252525;
+    background-color: #202123;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -62,4 +66,6 @@
     font-size: 16px;
   }
   
-  
+  button[type="button"]:hover {
+    background-color: #ab68ff;
+}
