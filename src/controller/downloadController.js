@@ -5,10 +5,13 @@ const youtubeDl = require('youtube-dl-exec');
 const os = require('os');
 const axios = require('axios');
 const ffmpeg = require('fluent-ffmpeg');
+const { app } = require('electron');
 
 // Función para obtener la carpeta de descargas predeterminada del sistema
+
+
 function getDefaultDownloadDir() {
-return path.join(__dirname, '../downloads');
+  return app.getPath('downloads');
 }
 
 // Función para obtener el título limpiado
