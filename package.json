@@ -20,10 +20,17 @@
     "axios": "^1.6.3",
     "cors": "^2.8.5",
     "electron-debug": "^3.2.0",
+    "eslint": "^8.56.0",
     "express": "^4.18.2",
     "express-validator": "^7.0.1",
     "fluent-ffmpeg": "^2.1.2",
     "multer": "^1.4.5-lts.1",
+    "standard": "^17.1.0",
     "youtube-dl-exec": "^2.5.3"
+  },
+  "eslintConfig": {
+    "extends": [
+      "./node_modules/standard/eslintrc.json"
+    ]
   }
 }

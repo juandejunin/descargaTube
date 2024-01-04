@@ -73,3 +73,11 @@ html {
 #messageContainer{
   color: #35941e;
 }
+
+.progress {
+  margin-top: 20px;
+}
+
+.progress-bar {
+  transition: width 0.3s ease-in-out;
+}
