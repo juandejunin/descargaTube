@@ -1,2 +1,1 @@
-// preload.js
-window.electronRequire = require;
+window.electronRequire = require
