@@ -3,7 +3,7 @@
 
 ## Descripción
 
-Este proyecto utiliza Electron para crear una aplicación de escritorio que permite descargar videos de YouTube en formatos MP3 o MP4. La aplicación utiliza Express como servidor backend para gestionar las descargas y Fluent-ffmpeg para convertir los archivos descargados a formato MP3 cuando se elige esa opción.
+Este proyecto utiliza Electron para crear una aplicación de escritorio que permite descargar archivos de YouTube en formatos MP3 o MP4. La aplicación utiliza Express como servidor backend para gestionar las descargas y Fluent-ffmpeg para convertir los archivos descargados a formato MP3 cuando se elige esa opción.
 
 ## Funciones Principales
 
