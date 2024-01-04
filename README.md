@@ -1,5 +1,5 @@
 # DescargaTube
-![Descripción de la Captura](ruta/relativa/a/la/captura.png)
+![Descripción de la Captura](imagen.png)
 
 ## Descripción
 
