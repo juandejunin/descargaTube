@@ -73,11 +73,11 @@ async function descargarFormato(videoUrl, cleanTitle, outputDir, formato) {
           .outputOptions('-map_metadata 0')
           .toFormat('mp3')
           .on('end', () => {
-            console.log('Conversión a MP3 exitosa.');
+            console.log('Conversion a MP3 exitosa.');
             resolve();
           })
           .on('error', (err) => {
-            console.error('Error en la conversión a MP3: ' + err);
+            console.error('Error en la conversion a MP3: ' + err);
             reject(err);
           })
           .save(formatoFilename);

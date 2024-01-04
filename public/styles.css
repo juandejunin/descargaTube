@@ -69,3 +69,7 @@ html {
   button[type="button"]:hover {
     background-color: #ab68ff;
 }
+
+#messageContainer{
+  color: #35941e;
+}
